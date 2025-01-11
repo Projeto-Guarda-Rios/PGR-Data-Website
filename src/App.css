@@ -97,6 +97,35 @@ body {
     overflow-y: auto;
 }
 
+.home-page-header {
+    width: 100%;
+    background-color: #14171b;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.home-page-header-pgr-logo {
+    height: 7.5vh;
+    margin-left: 1vw;
+}
+
+.home-page-title {
+    color: #efebeb;
+    margin-left: 1.5vw;
+}
+
+.home-page-content {
+    margin-left: 5.5vw;
+}
+
+.home-page-content p {
+    color: #efebeb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    width: 70%;
+}
+
 .graph-title {
     color: #efebeb;
 }

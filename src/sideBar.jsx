@@ -4,10 +4,11 @@ import './App.css';
 function SideBar(props) {
     return (
         <div className="side-bar">
-            <div className={props.currentPage == 0 ? "side-bar-element-selected" : "side-bar-element"} onClick={() => props.updatePageFunc(0)}>Gráfico Geral</div>
-            <div className={props.currentPage == 1 ? "side-bar-element-selected" : "side-bar-element"} onClick={() => props.updatePageFunc(1)}>Gráfico Ribeira da Granja</div>
-            <div className={props.currentPage == 2 ? "side-bar-element-selected" : "side-bar-element"} onClick={() => props.updatePageFunc(2)}>Gráfico Rio Douro</div>
-            <div className={props.currentPage == 3 ? "side-bar-element-selected" : "side-bar-element"} onClick={() => props.updatePageFunc(3)}>Gráfico Rio Tejo</div>
+            <div className={props.currentPage == 0 ? "side-bar-element-selected" : "side-bar-element"} onClick={() => props.updatePageFunc(0)}>Home Page</div>
+            <div className={props.currentPage == 1 ? "side-bar-element-selected" : "side-bar-element"} onClick={() => props.updatePageFunc(1)}>Gráfico Geral</div>
+            <div className={props.currentPage == 2 ? "side-bar-element-selected" : "side-bar-element"} onClick={() => props.updatePageFunc(2)}>Gráfico Ribeira da Granja</div>
+            <div className={props.currentPage == 3 ? "side-bar-element-selected" : "side-bar-element"} onClick={() => props.updatePageFunc(3)}>Gráfico Rio Douro</div>
+            <div className={props.currentPage == 4 ? "side-bar-element-selected" : "side-bar-element"} onClick={() => props.updatePageFunc(4)}>Gráfico Rio Tejo</div>
         </div>
     );
 }
@@ -18,7 +19,7 @@ SideBar.propTypes = {
 }
 
 SideBar.defaultProps = {
-    currentPage: -1
+    currentPage: 0
 }
 
 export default SideBar;
